@@ -15,6 +15,8 @@ function submitForm() {
     var comments = document.getElementById("comments");
     var commentsErr = document.getElementById("err_dob");
     
+    /*checks to see if email greater then 0 and it includes a @ and a . */
+    
     if ( email.value.length > 0 && email.value.indexOf("@") > 0 && email.value.indexOf(".")){
         email.className = "good";
         emailErr.innerHTML = "Email is valid";
@@ -24,7 +26,9 @@ function submitForm() {
         emailErr.innerHTML = "Email is not valid";
         emailErr.classname = "bad";
     }
-        
+    
+    /* checks to see if comments is greater then 0 and less then 15 */
+    
     if ( comments.value.length > 0 && comments.value.length < 150) {
         comments.className = "good";
         commentsErr.innerHTML = "Good!";
@@ -35,6 +39,8 @@ function submitForm() {
         commentsErr.className = "error";
         
     }
+    
+    /* checks to see if fullname is greater then 0 */
     
     if ( fullname.value.length > 0 ) {
         fullname.className = "good";
