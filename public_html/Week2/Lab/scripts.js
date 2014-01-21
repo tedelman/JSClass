@@ -17,7 +17,7 @@ function submitForm() {
     
     /*checks to see if email greater then 0 and it includes a @ and a . */
     
-    if ( email.value.length > 0 && email.value.indexOf("@") > 0 && email.value.indexOf(".")){
+    if ( email.value.length > 0 && email.value.indexOf("@") > 0 && email.value.indexOf(".") > 0){
         email.className = "good";
         emailErr.innerHTML = "Email is valid";
         emailErr.className = "valid";
