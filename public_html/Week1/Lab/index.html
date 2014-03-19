@@ -14,7 +14,7 @@ and open the template in the editor.
         <div>TODO write content</div>\
         
         <!-- Step 1
-        Create a JavaScript Variables each with it's own type. 
+        Create a Java Script Variables each with it's own type. 
         String, boolean, number.  
         Use == and === to compare each one with a console.log 
         using IF statements. 
@@ -31,67 +31,74 @@ and open the template in the editor.
         another that counts from 0 to 10.
 
 
-        Please add comments to your JavaScript code explaining 
+        Please add comments to your Java Script code explaining 
         what you have done. comments can be added with /* [comment] */
         -->
         <script type="text/javascript">
-        
-            var firststring = "string";
-                console.log("firststring");
+            
+            //variable for num
+            var firstNum = 0;
+            
+            //if to compare number value
+            if (firstNum  == "1"){
+                console.log("Equal 2");
+            }else {
+                console.log("DOES NOT EQUAL")
+            }
                 
-            var secondstring = "string2";
-                console.log("secondstring");
-                
-            var firstnum = 1;
-                if ( firstnum == 1 ){
-                   console.log("Correct");
-               }
-                else { 
-                    console.log("incorrect");
+            //if to compare number type and value
+            if ( firstNum === "5" ){
+                   console.log("Equal 4");
+               }else { 
+                    console.log("DOES NOT EQUAL");
                 }  
-                
-            var secondnum = 0;
-                if ( secondnum === 0 ){
-                    console.log("number is 0");
-                }else if ( secondnum === 1){
-                    console.log("number is 1");
+            
+            //variable for string
+            var firstString = "20";
+            
+            //if to compare string value
+            if ( firstString == 20 ){
+                    console.log("Equal 6");
                 }else {
-                    console.log("number is undefined");
+                    console.log("DOES NOT EQUAL");
+                }   
+            
+            //if to compare string type and value
+           if ( firstString === 20 ){
+                    console.log("Equal 8");
+                }else {
+                    console.log("DOES NOT EQUAL");
                 }   
                 
-                
-            /* only works if false.  will not work if true */
             
-            var firstboolean = false;
-                
-                if ( firstboolean == secondnum){
-                    console.log ("boolean = number");
-                } else if ( firstboolean === secondnum){
-                    console.log ( "boolean = number and type");
-                }        
+            //variable for boolean
+            var firstBoolean = false;
             
-                while ( !firstboolean ) {
-                    if ( !firstboolean ) 
-                    {
-                        firstboolean = false;
-                    }
-                        
-                }
-             
-            /* can do i < 11 or i = 10 both will count to 10*/
+            //if to compare boolean value    
+            if ( firstBoolean == 0){
+                console.log ("Equal 10");
+            } else{
+                console.log ( "DOES NOT EQUAL");
+            }        
             
-            for ( var i = 0; i < 11; i++ ){
-                console.log("The number is " + i );
+            //if to compare boolean type and value 
+            if (firstBoolean === 0){
+                console.log("Equal 12");
+            }else {
+                console.log("Not Equal 14")
             }
-    
-            var secondboolean = false;
+                
            
-            while ( !secondboolean ) {
-                if ( !secondboolean > !firstboolean )
-                { 
-                    secondboolean = true;
-                }
+            
+            //for loop counts from 0 to 20
+           for ( var i = 0; i <= 20; i++ ){
+                console.log("The Number is " + i );
             }
+           
+           //for loop counts from 20 to 0
+           for ( var x = 20; x >= 0; x--){
+               console.log("The Number is " + x);
+           }
             
                 
                 
