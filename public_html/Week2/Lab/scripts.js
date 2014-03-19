@@ -13,7 +13,7 @@ function submitForm() {
     var fullname = document.getElementById("name");
     var fullnameErr = document.getElementById("err_name");
     var comments = document.getElementById("comments");
-    var commentsErr = document.getElementById("err_dob");
+    var commentsErr = document.getElementById("err_comments");
     
     /*checks to see if email greater then 0 and it includes a @ and a . */
     
@@ -24,10 +24,10 @@ function submitForm() {
     } else { 
         email.className = "bad";
         emailErr.innerHTML = "Email is not valid";
-        emailErr.classname = "bad";
+        emailErr.classname = "error";
     }
     
-    /* checks to see if comments is greater then 0 and less then 15 */
+    /* checks to see if comments is greater then 0 and less then 150 */
     
     if ( comments.value.length > 0 && comments.value.length < 150) {
         comments.className = "good";
